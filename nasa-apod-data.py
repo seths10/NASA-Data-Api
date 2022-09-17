@@ -32,6 +32,6 @@ def get_archive_data(query: str) -> dict:
 
 
 if __name__ == "__main__":
-    print(save_apod("YOUR API KEY"))
+    print(save_apod("ENTER API KEY HERE"))
     apollo_2011_items = get_archive_data("apollo 2011")["collection"]["items"]
     print(apollo_2011_items[0]["data"][0]["description"])
