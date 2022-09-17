@@ -5,7 +5,7 @@ import requests
 
 def get_apod_data(api_key: str, download: bool = False, path: str = ".") -> dict:
     """
-    Get the APOD(Astronomical Picture of the day) data
+    Get data on the Astronomical Picture of the day
     """
     url = "https://api.nasa.gov/planetary/apod"
     return requests.get(url, params={"api_key": api_key}).json()
